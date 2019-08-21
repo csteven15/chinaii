@@ -1,14 +1,7 @@
-import React, { useState, Fragment, useReducer, useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Category from './Category';
-import { Paper, Tabs, Tab, CssBaseline } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Tab } from 'semantic-ui-react';
 import fire from '../fire';
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-}));
 
 function menuReducer(state, action) {
   switch (action.type) {
@@ -24,14 +17,13 @@ function menuReducer(state, action) {
 
 const initialState = {
   menu: null,
+  activeItem: 'mainMenu'
 };
+
 function Menu() {
-  const [value, setValue] = useState(0);
 
   const [state, dispatch] = useReducer(menuReducer, initialState);
   const { menu } = state;
-
-  console.log(menu)
 
   useEffect(() => {
     fire.database().ref('/menu').once('value').then(function (snapshot) {
@@ -40,52 +32,31 @@ function Menu() {
     })
   }, [])
 
-  function handleChange(event, newValue) {
-    setValue(newValue);
-  }
-
   const createMenu = (query) => {
-    if (query != null) {
-      let categories = [];
-      for (let i in query) {
-        categories.push(
-          <Category key={i} data={query[i]} />
-        );
-      }
-      return categories;
+    let categories = [];
+    for (let i in query) {
+      categories.push(
+        <Category key={i} data={query[i]} />
+      );
     }
-
+    return categories;
   }
 
-  const classes = useStyles();
+  let panes = [];
 
+  if (menu !== null) {
+    panes = [
+      { menuItem: 'Main Menu', render: () => <Tab.Pane attached={false}>{createMenu(menu['mainMenu'])}</Tab.Pane> },
+      { menuItem: 'Lunch', render: () => <Tab.Pane attached={false}>{createMenu(menu['lunch'])}</Tab.Pane> },
+      { menuItem: 'Special Combinations', render: () => <Tab.Pane attached={false}>{createMenu(menu['specialCombination'])}</Tab.Pane> },
+      { menuItem: 'China II Specials', render: () => <Tab.Pane attached={false}>{createMenu(menu['chinaIISpecial'])}</Tab.Pane> },
+      { menuItem: 'Specialties', render: () => <Tab.Pane attached={false}>{createMenu(menu['specialties'])}</Tab.Pane> },
+      { menuItem: 'Diet', render: () => <Tab.Pane attached={false}>{createMenu(menu['diet'])}</Tab.Pane> }
+    ]
+  }
+  
   return (
-    <Fragment>
-      <CssBaseline/>
-      <Paper className={classes.root}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          scrollable="true"
-          scrollButtons="on"
-        >
-          <Tab label="Main Menu" />
-          <Tab label="Lunch" />
-          <Tab label="Special Combinations" />
-          <Tab label="China II Specials" />
-          <Tab label="Specialties" />
-          <Tab label="Diet" />
-        </Tabs>
-        {menu !== null && value === 0 && <Fragment>{createMenu(menu['mainMenu'])}</Fragment>}
-        {menu !== null && value === 1 && <Fragment>{createMenu(menu['lunch'])}</Fragment>}
-        {menu !== null && value === 2 && <Fragment>{createMenu(menu['specialCombination'])}</Fragment>}
-        {menu !== null && value === 3 && <Fragment>{createMenu(menu['chinaIISpecial'])}</Fragment>}
-        {menu !== null && value === 4 && <Fragment>{createMenu(menu['specialties'])}</Fragment>}
-        {menu !== null && value === 5 && <Fragment>{createMenu(menu['diet'])}</Fragment>}
-      </Paper>
-    </Fragment>
+    <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
   );
 }
 

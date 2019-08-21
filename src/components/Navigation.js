@@ -1,196 +1,210 @@
-import React, { useState } from 'react';
-import { AppBar, Box, Button, CssBaseline, Drawer, Toolbar, IconButton, Typography, Hidden, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import { Home, Menu, Map, ContactSupport, PermMedia, Phone, DirectionsCar } from '@material-ui/icons';
-import { Link, withRouter } from 'react-router-dom';
+import React, { Component } from 'react';
+import {
+  Header,
+  Container,
+  Icon,
+  Menu,
+  Responsive,
+  Segment,
+  Sidebar,
+  Visibility
+} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-const drawerWidth = 240;
+const getWidth = () => {
+  const isSSR = typeof window === 'undefined'
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-    zIndex: 0,
-  },
-  appBar: {
-    marginLeft: drawerWidth,
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-    },
-    zIndex: theme.zIndex.drawer + 1,
-    height: '60px',
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-  },
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  content: {
-    flexGrow: 1,
-    marginTop: theme.spacing(7),
-  },
-  drawerText: {
-    textDecoration: 'none',
-    color: '#000',
-  },
-  drawerTitle: {
-    height: '60px',
-  }
-}));
-
-const Navigation = (props) => {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  const { location } = props;
-  const classes = useStyles();
-
-  const paths = [
-    {
-      path: '/',
-      name: 'Home'
-    },
-    {
-      path: '/menu',
-      name: 'Menu'
-    },
-    {
-      path: '/gallery',
-      name: 'Gallery'
-    },
-    {
-      path: '/contact',
-      name: 'Contact'
-    }
-  ]
-
-  const assignNavIcons = (path) => {
-    switch (path) {
-      case '/':
-        return <Home />
-      case '/menu':
-        return <Map />
-      case '/gallery':
-        return <PermMedia />
-      case '/contact':
-        return <ContactSupport />
-      default:
-        return null;
-    }
-  }
-
-  const drawer = (
-    <div>
-      <Box>
-        <ListItem className={classes.drawerTitle}>
-          <Button
-            href="tel:123-123-1234"
-          >
-            <Typography variant="body1" color="inherit" >
-              Call
-            </Typography>
-            <Phone />
-          </Button>
-          <Button
-            href="https://goo.gl/maps/aAiGk53wMpBvz9oC7"
-          >
-            <Typography variant="body1" color="inherit" >
-              Directions
-            </Typography>
-            <DirectionsCar />
-          </Button>
-        </ListItem>
-      </Box>
-      {/* <Box borderTop={1} borderColor="grey.500"> */}
-      <List>
-        {
-          paths.map((nav) => (
-            <Link
-              to={nav.path}
-              onClick={() => {
-                if (mobileOpen === true) {
-                  setMobileOpen(!mobileOpen);
-                }
-              }}
-              className={classes.drawerText}
-              key={nav.name}
-            >
-              <ListItem
-                button
-                selected={location.pathname === nav.path}
-              >
-                <ListItemIcon>
-                  {assignNavIcons(nav.path)}
-                </ListItemIcon>
-                <ListItemText primary={nav.name} />
-              </ListItem>
-            </Link>
-          ))
-        }
-      </List>
-      {/* </Box> */}
-    </div>
-  );
-
-  return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="Open drawer"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className={classes.menuButton}
-          >
-            <Menu />
-          </IconButton>
-          <Typography variant="h6" color="inherit" noWrap>
-            China II
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <nav className={classes.drawer}>
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={props.container}
-            variant="temporary"
-            anchor={'left'}
-            open={mobileOpen}
-            onClose={() => setMobileOpen(!mobileOpen)}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-      </nav>
-      <main className={classes.content}>
-        {props.children}
-      </main>
-    </div>
-  );
+  return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
 }
 
-export default withRouter(Navigation);
+function isHomePath(path) {
+  if (path === '/') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const navigationMenu = [
+  {
+    path: '/',
+    pathname: 'Home'
+  },
+  {
+    path: '/menu',
+    pathname: 'Menu'
+  },
+  {
+    path: '/gallery',
+    pathname: 'Gallery'
+  },
+  {
+    path: '/contact',
+    pathname: 'Contact'
+  }
+]
+
+const HomepageHeading = ({ mobile }) => (
+  <Container text>
+    <Header
+      as='h1'
+      content='China II'
+      inverted
+      style={{
+        fontSize: mobile ? '2em' : '4em',
+        fontWeight: 'normal',
+        marginBottom: 0,
+        marginTop: mobile ? '1.5em' : '3em',
+      }}
+    />
+    <Header
+      as='h2'
+      content='Best New York Style Chinese Take Out in Sanford, FL.'
+      inverted
+      style={{
+        fontSize: mobile ? '1.5em' : '1.7em',
+        fontWeight: 'normal',
+        marginTop: mobile ? '0.5em' : '1.5em',
+      }}
+    />
+  </Container>
+)
+
+class DesktopContainer extends Component {
+  state = {}
+
+  hideFixedMenu = () => this.setState({ fixed: false })
+  showFixedMenu = () => this.setState({ fixed: true })
+
+  render() {
+    const { children } = this.props
+    const { fixed } = this.state
+
+    return (
+      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+        <Visibility
+          once={false}
+          onBottomPassed={this.showFixedMenu}
+          onBottomPassedReverse={this.hideFixedMenu}
+        >
+          <Segment
+            inverted
+            textAlign='center'
+            style={{
+              minHeight: isHomePath(this.props.location.pathname) ? 500 : 0,
+              padding: isHomePath(this.props.location.pathname) ? '1em 0em' : 0
+            }}
+            vertical
+          >
+            <Menu
+              fixed={fixed ? 'top' : null}
+              inverted={!fixed}
+              pointing={!fixed}
+              secondary={!fixed}
+              size='large'
+            >
+              <Menu.Menu position='left'>
+                <Menu.Item as={Link} to='/'>China II</Menu.Item>
+              </Menu.Menu>
+              <Menu.Menu position='right'>
+                {
+                  navigationMenu.map(nav => (
+                    <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path}>{nav.pathname}</Menu.Item>
+                  ))
+                }
+              </Menu.Menu>
+            </Menu>
+            {
+              isHomePath(this.props.location.pathname) ? <HomepageHeading /> : null
+            }
+          </Segment>
+        </Visibility>
+
+        {children}
+      </Responsive>
+    )
+  }
+}
+
+const Desktop = withRouter(DesktopContainer);
+
+class MobileContainer extends Component {
+  state = {}
+
+  handleSidebarHide = () => this.setState({ sidebarOpened: false })
+
+  handleToggle = () => this.setState({ sidebarOpened: true })
+
+  render() {
+    const { children } = this.props
+    const { sidebarOpened } = this.state
+
+    return (
+      <Responsive
+        as={Sidebar.Pushable}
+        getWidth={getWidth}
+        maxWidth={Responsive.onlyMobile.maxWidth}
+      >
+        <Sidebar
+          as={Menu}
+          animation='push'
+          inverted
+          onHide={this.handleSidebarHide}
+          vertical
+          visible={sidebarOpened}
+        >
+            <Menu.Item as={Link} to='/'>China II</Menu.Item>
+            {
+              navigationMenu.map(nav => (
+                <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path}>{nav.pathname}</Menu.Item>
+              ))
+            }
+        </Sidebar>
+
+        <Sidebar.Pusher dimmed={sidebarOpened}>
+          <Segment
+            inverted
+            textAlign='center'
+            style={{
+              minHeight: isHomePath(this.props.location.pathname) ? 500 : 0,
+              padding: isHomePath(this.props.location.pathname) ? '1em 0em' : 0
+            }}
+            vertical
+          >
+            <Container>
+              <Menu inverted pointing secondary size='large'>
+                <Menu.Item onClick={this.handleToggle}>
+                  <Icon name='sidebar' />
+                </Menu.Item>
+                <Menu.Item>
+                  China II
+                </Menu.Item>
+              </Menu>
+            </Container>
+            {
+              isHomePath(this.props.location.pathname) ? <HomepageHeading mobile /> : null
+            }
+          </Segment>
+          {children}
+        </Sidebar.Pusher>
+      </Responsive>
+    )
+  }
+}
+
+const Mobile = withRouter(MobileContainer);
+
+const ResponsiveContainer = ({children}) => (
+  <div>
+    <Desktop>{children}</Desktop>
+    <Mobile>{children}</Mobile>
+  </div>
+)
+
+const Navigation = ({children}) => (
+  <ResponsiveContainer>
+    {children}
+  </ResponsiveContainer>
+)
+export default Navigation;

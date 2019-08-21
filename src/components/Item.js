@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { CssBaseline } from '@material-ui/core';
 
 const Items = (props) => {
   const { name, isHot, description, prices } = props.data;
@@ -19,9 +18,8 @@ const Items = (props) => {
   }
     return (
       <Fragment>
-        <CssBaseline/>
         <h5>
-          {name }&nbsp;&nbsp;{ isHot ? <img src={require('../images/fire.svg')} alt="hot" width="10" /> : null }
+          { name }&nbsp;&nbsp;{ isHot ? <img src={require('../images/fire.svg')} alt="hot" width="10" /> : null }
           { description ? <span style={{ fontWeight: 300, fontSize: '10px' }}><br />{description}</span> : null }
           { priceList }
         </h5>

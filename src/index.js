@@ -3,20 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-    suppressDeprecationWarnings: true
-  }
-});
+import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
   // <StoreProvider store={store}>
-    <MuiThemeProvider theme={theme}>
-      <App />
-    </MuiThemeProvider>
+    <App />
   // </StoreProvider>
   , document.getElementById('root'));
 
