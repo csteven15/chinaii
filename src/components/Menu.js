@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
 import Category from './Category';
-import { Tab } from 'semantic-ui-react';
+import { Tab, Segment } from 'semantic-ui-react';
 import fire from '../fire';
 
 function menuReducer(state, action) {
@@ -56,7 +56,9 @@ function Menu() {
   }
   
   return (
-    <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
+    <Segment>
+      <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
+    </Segment>
   );
 }
 

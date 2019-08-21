@@ -154,10 +154,10 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-            <Menu.Item as={Link} to='/'>China II</Menu.Item>
+          <Menu.Item as={Link} to='/' onClick={this.handleSidebarHide}>China II</Menu.Item>
             {
               navigationMenu.map(nav => (
-                <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path}>{nav.pathname}</Menu.Item>
+                <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path} onClick={this.handleSidebarHide}>{nav.pathname}</Menu.Item>
               ))
             }
         </Sidebar>
