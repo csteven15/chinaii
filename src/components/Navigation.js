@@ -1,39 +1,54 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
 import {
-  Header,
   Container,
   Icon,
   Menu,
   Responsive,
   Segment,
   Sidebar,
-  Visibility
-} from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
+  Dropdown
+} from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import { withRouter, useLocation } from "react-router-dom";
+import PageHeadings from "./PageHeadings";
+import Footer from "./Footer";
 
 const getWidth = () => {
-  const isSSR = typeof window === 'undefined'
+  const isSSR = typeof window === "undefined";
 
-  return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
-}
-
-function isHomePath(path) {
-  if (path === '/') {
-    return true;
-  } else {
-    return false;
-  }
-}
+  return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
+};
 
 const navigationMenu = [
   {
-    path: '/',
-    pathname: 'Home'
-  },
-  {
     path: '/menu',
-    pathname: 'Menu'
+    pathname: 'Menu',
+    subMenu: [
+      {
+        path: '/menu-main',
+        pathname: 'Main Menu',
+      },
+      {
+        path: '/menu-lunch',
+        pathname: 'Lunch',
+      },
+      {
+        path: '/menu-combo',
+        pathname: 'Special Combinations',
+      },
+      {
+        path: '/menu-specials',
+        pathname: 'China II Specials',
+      },
+      {
+        path: '/menu-specialties',
+        pathname: 'Specialties',
+      },
+      {
+        path: '/menu-diet',
+        pathname: 'Diet',
+      }
+    ]
   },
   {
     path: '/gallery',
@@ -43,168 +58,189 @@ const navigationMenu = [
     path: '/contact',
     pathname: 'Contact'
   }
-]
+];
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Header
-      as='h1'
-      content='China II'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-      }}
-    />
-    <Header
-      as='h2'
-      content='Best New York Style Chinese Take Out in Sanford, FL.'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
-  </Container>
-)
+function DesktopContainer(props) {
+  const path = props.location.pathname;
+  const children = React.Children.map(props.children, child => {
+    return React.cloneElement(child, {
+      mobile: false,
+    })
+  });
 
-class DesktopContainer extends Component {
-  state = {}
+  let location = useLocation();
+  console.log(location)
 
-  hideFixedMenu = () => this.setState({ fixed: false })
-  showFixedMenu = () => this.setState({ fixed: true })
 
-  render() {
-    const { children } = this.props
-    const { fixed } = this.state
-
-    return (
-      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
-          once={false}
-          onBottomPassed={this.showFixedMenu}
-          onBottomPassedReverse={this.hideFixedMenu}
+  return (
+    <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+      <Segment
+        inverted
+        textAlign="center"
+        style={{
+          padding: "1em 0em",
+        }}
+        vertical
+      >
+        <Menu
+          fixed="top"
+          inverted
+          secondary
+          pointing
+          size="large"
+          style={{ color: "#ffffff", backgroundColor: "#1b1c1d", fontSize: '1.2em' }}
         >
-          <Segment
-            inverted
-            textAlign='center'
-            style={{
-              minHeight: isHomePath(this.props.location.pathname) ? 500 : 0,
-              padding: isHomePath(this.props.location.pathname) ? '1em 0em' : 0
-            }}
-            vertical
-          >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Menu.Menu position='left'>
-                <Menu.Item as={Link} to='/'>China II</Menu.Item>
-              </Menu.Menu>
-              <Menu.Menu position='right'>
-                {
-                  navigationMenu.map(nav => (
-                    <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path}>{nav.pathname}</Menu.Item>
-                  ))
-                }
-              </Menu.Menu>
-            </Menu>
-            {
-              isHomePath(this.props.location.pathname) ? <HomepageHeading /> : null
-            }
-          </Segment>
-        </Visibility>
-
-        {children}
-      </Responsive>
-    )
-  }
+          <Menu.Menu position="left">
+            <Menu.Item as={Link} to="/">
+              China II
+            </Menu.Item>
+          </Menu.Menu>
+          <Menu.Menu position="right">
+              {
+                navigationMenu.map((menu) => (
+                  menu.pathname === 'Menu' ? 
+                  <Dropdown item text='Menu' className='link item' key={menu.pathname}>
+                    <Dropdown.Menu>
+                      {
+                        navigationMenu[0].subMenu.map((subMenu) => (
+                          <Dropdown.Item
+                            key={subMenu.pathname}
+                            as={Link}
+                            to={subMenu.path}
+                            active={props.location.pathname === subMenu.path}
+                          >
+                            {subMenu.pathname}
+                          </Dropdown.Item>
+                        ))
+                      }
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  :
+                  <Menu.Item
+                    key={menu.pathname}
+                    as={Link}
+                    to={menu.path}
+                    active={props.location.pathname === menu.path}
+                  >
+                    {menu.pathname === 'Menu' ? null : menu.pathname}
+                  </Menu.Item>
+                ))
+              }
+          </Menu.Menu>
+        </Menu>
+      </Segment>
+      <PageHeadings path={path} mobile={false} />
+      {children}
+      <Footer />
+    </Responsive>
+  );
 }
 
 const Desktop = withRouter(DesktopContainer);
 
-class MobileContainer extends Component {
-  state = {}
+function MobileContainer(props) {
+  const [sidebarOpened, setSidebarOpened] = useState(false)
+  const path = props.location.pathname
+  const children = React.Children.map(props.children, child => {
+    return React.cloneElement(child, {
+      mobile: true,
+    })
+  })
 
-  handleSidebarHide = () => this.setState({ sidebarOpened: false })
-
-  handleToggle = () => this.setState({ sidebarOpened: true })
-
-  render() {
-    const { children } = this.props
-    const { sidebarOpened } = this.state
-
-    return (
-      <Responsive
-        as={Sidebar.Pushable}
-        getWidth={getWidth}
-        maxWidth={Responsive.onlyMobile.maxWidth}
+  return (
+    <Responsive
+      as={Sidebar.Pushable}
+      getWidth={getWidth}
+      maxWidth={Responsive.onlyMobile.maxWidth}
+      style={{ transform: "none" }}
+    >
+      <Sidebar
+        as={Menu}
+        animation="overlay"
+        inverted
+        onHide={() => setSidebarOpened(false)}
+        vertical
+        visible={sidebarOpened}
+        style={{ position: "fixed" }}
       >
-        <Sidebar
-          as={Menu}
-          animation='push'
+        <Menu.Item as={Link} to="/" onClick={() => setSidebarOpened(false)}>
+          China II
+        </Menu.Item>
+        {
+          navigationMenu.map((menu) => (
+            menu.pathname === 'Menu' ?
+            <Menu.Item
+              key={menu.pathname}
+            >
+              <Menu.Header>Menu</Menu.Header>
+              <Menu.Menu>
+                {
+                  menu.subMenu.map((subMenu) => (
+                    <Menu.Item
+                      key={subMenu.pathname}
+                      as={Link}
+                      active={props.location.pathname === subMenu.path}
+                      to={subMenu.path}
+                    >
+                      {subMenu.pathname}
+                    </Menu.Item>
+                  ))
+                }
+              </Menu.Menu>
+            </Menu.Item>
+            :
+            <Menu.Item
+              key={menu.pathname}
+              as={Link}
+              active={props.location.pathname === menu.path}
+              to={menu.path}
+            >
+              {menu.pathname}
+            </Menu.Item>
+          ))
+        }
+      </Sidebar>
+      <Sidebar.Pusher dimmed={sidebarOpened}>
+        <Segment
           inverted
-          onHide={this.handleSidebarHide}
+          textAlign="center"
+          style={{
+            padding: "1em 0em",
+          }}
           vertical
-          visible={sidebarOpened}
         >
-          <Menu.Item as={Link} to='/' onClick={this.handleSidebarHide}>China II</Menu.Item>
-            {
-              navigationMenu.map(nav => (
-                <Menu.Item key={nav.pathname} as={Link} to={nav.path} active={this.props.location.pathname === nav.path} onClick={this.handleSidebarHide}>{nav.pathname}</Menu.Item>
-              ))
-            }
-        </Sidebar>
-
-        <Sidebar.Pusher dimmed={sidebarOpened}>
-          <Segment
-            inverted
-            textAlign='center'
-            style={{
-              minHeight: isHomePath(this.props.location.pathname) ? 500 : 0,
-              padding: isHomePath(this.props.location.pathname) ? '1em 0em' : 0
-            }}
-            vertical
-          >
-            <Container>
-              <Menu inverted pointing secondary size='large'>
-                <Menu.Item onClick={this.handleToggle}>
-                  <Icon name='sidebar' />
-                </Menu.Item>
-                <Menu.Item>
-                  China II
-                </Menu.Item>
-              </Menu>
-            </Container>
-            {
-              isHomePath(this.props.location.pathname) ? <HomepageHeading mobile /> : null
-            }
-          </Segment>
-          {children}
-        </Sidebar.Pusher>
-      </Responsive>
-    )
-  }
+          <Container text>
+            <Menu
+              text
+              fixed="top"
+              size="large"
+              style={{ backgroundColor: "#1b1c1d" }}
+            >
+              <Menu.Item onClick={() => setSidebarOpened(true)}>
+                <Icon name="sidebar" inverted />
+              </Menu.Item>
+              <Menu.Item style={{ color: "#ffffff" }}>China II</Menu.Item>
+            </Menu>
+          </Container>
+        </Segment>
+        <PageHeadings path={path} mobile={true} />
+        {children}
+        <Footer />
+      </Sidebar.Pusher>
+    </Responsive>
+  );
 }
 
 const Mobile = withRouter(MobileContainer);
 
-const ResponsiveContainer = ({children}) => (
+const ResponsiveContainer = ({ children }) => (
   <div>
     <Desktop>{children}</Desktop>
     <Mobile>{children}</Mobile>
   </div>
-)
+);
 
-const Navigation = ({children}) => (
-  <ResponsiveContainer>
-    {children}
-  </ResponsiveContainer>
-)
+const Navigation = ({ children }) => (
+  <ResponsiveContainer>{children}</ResponsiveContainer>
+);
 export default Navigation;

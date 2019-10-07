@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './Item';
 import { Header, Divider, Grid } from 'semantic-ui-react';
+import { Breakpoint } from "react-socks";
 
 const splitEvery = (object, length) => {
 
@@ -20,6 +21,7 @@ const splitEvery = (object, length) => {
 }
 
 function Category(props) {
+  
   const { name, items, description } = props.data;
 
   return (
@@ -27,14 +29,12 @@ function Category(props) {
       <Header as='h2'>
         { name }
       </Header>
-      <Header as='h6'>
-        { description ? description : null }
-      </Header>
+      { description ? <Header as='h6'>{description}</Header> : null }
       <Divider clearing />
-      <Grid columns='three' divided>
-        {
-          splitEvery(items, 3).map((itemsChunk, i) => {
-            return (
+      <Breakpoint small down>
+        <Grid columns='two' divided>
+          {
+            splitEvery(items, 2).map((itemsChunk, i) => (
               <Grid.Row key={Math.random()}>
                 {
                   itemsChunk.map(item => (
@@ -44,10 +44,27 @@ function Category(props) {
                   ))
                 }
               </Grid.Row>
-            )
-          })
-        }
-      </Grid>
+            ))
+          }
+        </Grid>
+      </Breakpoint>
+      <Breakpoint medium up>
+        <Grid columns='three' divided>
+          {
+            splitEvery(items, 3).map((itemsChunk, i) => (
+              <Grid.Row key={Math.random()}>
+                {
+                  itemsChunk.map(item => (
+                    <Grid.Column key={item.name + Math.random()}>
+                      <Item data={item} />
+                    </Grid.Column>
+                  ))
+                }
+              </Grid.Row>
+            ))
+          }
+        </Grid>
+      </Breakpoint>
     </React.Fragment>
   );
 }
