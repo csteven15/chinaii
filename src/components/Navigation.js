@@ -1,58 +1,21 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Button, CssBaseline, Drawer, Toolbar, IconButton, Typography, Hidden, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import { Home, Menu, Map, ContactSupport, PermMedia, Phone, DirectionsCar } from '@material-ui/icons';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, withRouter, useLocation } from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
+import Footer from './Footer.js';
 
-const drawerWidth = 240;
+function Navigation(props) {
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-    zIndex: 0,
-  },
-  appBar: {
-    marginLeft: drawerWidth,
-    [theme.breakpoints.up('sm')]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-    },
-    zIndex: theme.zIndex.drawer + 1,
-    height: '60px',
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-  },
-  toolbar: theme.mixins.toolbar,
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  content: {
-    flexGrow: 1,
-    marginTop: theme.spacing(7),
-  },
-  drawerText: {
-    textDecoration: 'none',
-    color: '#000',
-  },
-  drawerTitle: {
-    height: '60px',
-  }
-}));
+  const [isOpen, setIsOpen] = useState(false);
 
-const Navigation = (props) => {
-  const [mobileOpen, setMobileOpen] = useState(false);
-
-  const { location } = props;
-  const classes = useStyles();
+  const toggle = () => setIsOpen(!isOpen);
 
   const paths = [
     {
@@ -71,124 +34,33 @@ const Navigation = (props) => {
       path: '/contact',
       name: 'Contact'
     }
-  ]
+  ];
 
-  const assignNavIcons = (path) => {
-    switch (path) {
-      case '/':
-        return <Home />
-      case '/menu':
-        return <Map />
-      case '/gallery':
-        return <PermMedia />
-      case '/contact':
-        return <ContactSupport />
-      default:
-        return null;
-    }
-  }
-
-  const drawer = (
-    <div>
-      <Box>
-        <ListItem className={classes.drawerTitle}>
-          <Button
-            href="tel:123-123-1234"
-          >
-            <Typography variant="body1" color="inherit" >
-              Call
-            </Typography>
-            <Phone />
-          </Button>
-          <Button
-            href="https://goo.gl/maps/aAiGk53wMpBvz9oC7"
-          >
-            <Typography variant="body1" color="inherit" >
-              Directions
-            </Typography>
-            <DirectionsCar />
-          </Button>
-        </ListItem>
-      </Box>
-      {/* <Box borderTop={1} borderColor="grey.500"> */}
-      <List>
-        {
-          paths.map((nav) => (
-            <Link
-              to={nav.path}
-              onClick={() => {
-                if (mobileOpen === true) {
-                  setMobileOpen(!mobileOpen);
-                }
-              }}
-              className={classes.drawerText}
-              key={nav.name}
-            >
-              <ListItem
-                button
-                selected={location.pathname === nav.path}
-              >
-                <ListItemIcon>
-                  {assignNavIcons(nav.path)}
-                </ListItemIcon>
-                <ListItemText primary={nav.name} />
-              </ListItem>
-            </Link>
-          ))
-        }
-      </List>
-      {/* </Box> */}
-    </div>
-  );
+  const location = useLocation();
 
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="Open drawer"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className={classes.menuButton}
-          >
-            <Menu />
-          </IconButton>
-          <Typography variant="h6" color="inherit" noWrap>
-            China II
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <nav className={classes.drawer}>
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={props.container}
-            variant="temporary"
-            anchor={'left'}
-            open={mobileOpen}
-            onClose={() => setMobileOpen(!mobileOpen)}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
+    <div>
+      <nav className="bg-dark text-light sticky-top">
+      <Navbar dark expand="md">
+        <NavbarBrand href="/"><strong>New China II</strong></NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            {
+              paths.map(pages => (
+                <NavItem key={pages.name}>
+                  <NavLink tag={Link} to={pages.path} active={location.pathname === pages.path} onClick={() => toggle()}>{pages.name}</NavLink>
+                </NavItem>
+              ))
+            }
+          </Nav>
+        </Collapse>
+      </Navbar>
       </nav>
-      <main className={classes.content}>
+      <main>
         {props.children}
       </main>
+      <Footer />
     </div>
   );
 }
