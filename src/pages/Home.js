@@ -1,10 +1,11 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col, Media, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function Home(props) {
   const styles = {
     jumbotron: {
-      background: `url(${require('./../images/chopsticks.jpg')}) no-repeat center center fixed`,
+      background: `url(${require('./../images/wallpaper.jpg')}) no-repeat center center fixed`,
       backgroundSize: `cover`,
       textAlign: `center`,
       color: `#fff`,
@@ -21,20 +22,23 @@ function Home(props) {
       </Jumbotron>
       <Container>
         <Row className="align-items-center">
-          <Col>
+          <Col xs={12} sm={6} className="font-weight-bold">
             <h4>Trust earned through 15+ years of service</h4>
             <p>We have served our loyal customers for 15+ years. Come and be a part of the family.</p>
             <h4>New York Style Chinese Restaurant</h4>
             <p>Yes that's right, our food is served New York style, giving a taste of New York. It consists of a huge variety of food, ranging from our famous egg rolls to our most popular dish, General Tso Chicken.</p>
           </Col>
-          <Col>
-            <Media src={require('./../images/noodles.jpg')} alt="Generic placeholder image" className="w-100" />
+          <Col xs={12} sm={6} style={{textAlign: 'center'}}>
+            <Media src={require('./../images/collage.jpg')} alt="Generic placeholder image" className="w-75 mx-auto" />
+            <Button color="dark" tag={Link} to="/gallery" className="my-2 font-weight-bold">
+              View our full Gallery
+            </Button>
           </Col>
         </Row>
       </Container>
       <br />
       <Container className="text-center py-2">
-        <Button>
+        <Button size="lg" color="dark" tag={Link} to="/menu" className="font-weight-bold">
           View our full menu
         </Button>
       </Container>

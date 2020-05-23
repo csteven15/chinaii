@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'reactstrap';
 
 function Footer() {
   return (
-    <div className="justify-content-center text-center bg-dark text-light">
+    <div className="justify-content-center text-center bg-dark text-light py-3">
       <Container>
         <Row>
           <Col><strong>Day</strong></Col>

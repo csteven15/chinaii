@@ -8,21 +8,21 @@ function Items(props) {
   for (let i in prices) {
     if (prices[i].label) {
       priceList.push(
-        <p className="mb-0" key={i} style={{ fontWeight: 500, fontSize: '9px' }}>{prices[i].label}: ${prices[i].price.toFixed(2)}</p>
+        <p className="mb-0" key={i} style={{ fontWeight: 500, fontSize: '10px' }}>{prices[i].label}: ${prices[i].price.toFixed(2)}</p>
       );
     }
     else {
       priceList.push(
-        <p className="mb-0" key={i} style={{ fontWeight: 500, fontSize: '9px' }}>Per order: ${prices[i].price.toFixed(2)}</p>
+        <p className="mb-0" key={i} style={{ fontWeight: 500, fontSize: '10px' }}>Per order: ${prices[i].price.toFixed(2)}</p>
       );
     }
   }
     return (
       <div>
         <p className="mb-0">
-          { name } &nbsp; { isHot ? <img src={require('../images/fire.svg')} alt="hot" width="9px" /> : null }
+          { name } &nbsp; { isHot ? <img src={require('../images/fire.svg')} alt="hot" width="10px" /> : null }
         </p>
-        { description ? <p className="mb-0" style={{ fontSize: '9px' }}>({description})</p> : null }
+        { description ? <p className="mb-0" style={{ fontSize: '10px' }}>({description})</p> : null }
         { priceList }
       </div>
     );
