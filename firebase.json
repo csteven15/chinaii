@@ -3,11 +3,40 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "build",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/menu",
+        "destination": "/menu.html"
+      },
+      {
+        "source": "/gallery",
+        "destination": "/gallery.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "**",
+        "destination": "/404.html"
+      }
     ]
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
