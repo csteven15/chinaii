@@ -1,0 +1,54 @@
+{
+  "data": {
+    "description": "Rice Noodles",
+    "items": [
+      {
+        "name": "Pork Chow Mai Fun",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 9.95
+          }
+        ]
+      },
+      {
+        "name": "Chicken Chow Mai Fun",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 9.95
+          }
+        ]
+      },
+      {
+        "name": "Shrimp Chow Mai Fun",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "name": "House Special Chow Mai Fun",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 11.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Singapore Mai Fun",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 11.25
+          }
+        ]
+      }
+    ],
+    "name": "Chow Mai Fun"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "description": "Served with Steamed Rice, No MSG, No Sugar, No Salt, No Oil, China II Special Sauce",
+      "items": [
+        {
+          "name": "Steamed Fresh Vegetables",
+          "prices": [
+            {
+              "price": 9.35
+            }
+          ]
+        },
+        {
+          "name": "Steamed Chicken with Broccoli",
+          "prices": [
+            {
+              "price": 10.25
+            }
+          ]
+        },
+        {
+          "name": "Steamed Chicken with Mixed Vegetables",
+          "prices": [
+            {
+              "price": 10.25
+            }
+          ]
+        },
+        {
+          "name": "Steamed Shrimp with Mixed Vegetables",
+          "prices": [
+            {
+              "price": 11.7
+            }
+          ]
+        },
+        {
+          "name": "Steamed Chicken and Shrimp with Mixed Vegetables",
+          "prices": [
+            {
+              "price": 11.95
+            }
+          ]
+        }
+      ],
+      "name": "Diet Menu"
+    }
+  ]
+}

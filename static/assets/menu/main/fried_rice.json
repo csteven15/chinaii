@@ -1,0 +1,85 @@
+{
+  "data": {
+    "items": [
+      {
+        "name": "Pork Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.3
+          },
+          {
+            "label": "Quart",
+            "price": 8.95
+          }
+        ]
+      },
+      {
+        "name": "Chicken Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.3
+          },
+          {
+            "label": "Quart",
+            "price": 8.95
+          }
+        ]
+      },
+      {
+        "name": "Beef Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.6
+          },
+          {
+            "label": "Quart",
+            "price": 9.35
+          }
+        ]
+      },
+      {
+        "name": "Shrimp Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.6
+          },
+          {
+            "label": "Quart",
+            "price": 9.35
+          }
+        ]
+      },
+      {
+        "name": "Vegetable Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 5.6
+          },
+          {
+            "label": "Quart",
+            "price": 8.5
+          }
+        ]
+      },
+      {
+        "name": "House Fried Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 9.5
+          }
+        ]
+      }
+    ],
+    "name": "Fried Rice"
+  }
+}

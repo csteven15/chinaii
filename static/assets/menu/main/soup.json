@@ -1,0 +1,114 @@
+{
+  "data": {
+    "items": [
+      {
+        "name": "Wonton Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.75
+          },
+          {
+            "label": "Quart",
+            "price": 4.25
+          }
+        ]
+      },
+      {
+        "name": "Egg Drop Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.75
+          },
+          {
+            "label": "Quart",
+            "price": 4.25
+          }
+        ]
+      },
+      {
+        "name": "Chicken Noodle Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.75
+          },
+          {
+            "label": "Quart",
+            "price": 4.25
+          }
+        ]
+      },
+      {
+        "name": "Chicken Rice Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.75
+          },
+          {
+            "label": "Quart",
+            "price": 4.25
+          }
+        ]
+      },
+      {
+        "name": "Chicken Corn Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.95
+          },
+          {
+            "label": "Quart",
+            "price": 4.95
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Hot & Sour Soup",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 2.95
+          },
+          {
+            "label": "Quart",
+            "price": 5.25
+          }
+        ]
+      },
+      {
+        "description": "Chicken, pork, shrimp, vegetables & wonton",
+        "name": "House Wonton Soup",
+        "prices": [
+          {
+            "label": "Quart",
+            "price": 8.5
+          }
+        ]
+      },
+      {
+        "name": "Seafood Soup",
+        "prices": [
+          {
+            "label": "Quart",
+            "price": 9.95
+          }
+        ]
+      },
+      {
+        "name": "Tofu Vegetable Soup",
+        "prices": [
+          {
+            "label": "Quart",
+            "price": 7.5
+          }
+        ]
+      }
+    ],
+    "name": "Soup"
+  }
+}

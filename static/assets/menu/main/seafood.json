@@ -1,0 +1,102 @@
+{
+  "data": {
+    "description": "with White Rice",
+    "items": [
+      {
+        "name": "Shrimp with Lobster Sauce",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "name": "Shrimp with Broccoli",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "name": "Shrimp with Lobster Sauce",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Shrimp with Garlic Sauce",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Shrimp with Chili Sauce",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "name": "Shrimp with Mix Vegetable",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Hunan Shrimp",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 7.25
+          },
+          {
+            "label": "Quart",
+            "price": 11.7
+          }
+        ]
+      }
+    ],
+    "name": "Seafood"
+  }
+}

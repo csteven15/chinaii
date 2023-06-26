@@ -1,0 +1,249 @@
+{
+  "data": [
+    {
+      "description": "Served with Egg Roll & Roast Pork Fried Rice",
+      "items": [
+        {
+          "name": "Chicken or Shrimp Chow Mein",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Roast Pork or Chicken Egg Foo Young",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Roast Pork or Chicken Lo Mein",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Shrimp or Beef Lo Mein",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Boneless Spare Ribs",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "B-B-Q Spare Ribs",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Sweet & Sour Chicken or Pork",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Honey Chicken",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Sesame Chicken",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "General Tso's Chicken",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Szechuan Chicken",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Bourbon Chicken",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Curry Chicken",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Chicken with Mixed Vegetable",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Chicken with Garlic Sauce",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Moo Goo Gai Pan",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Pepper Steak with Onion",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Hunan Beef",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Hot & Spicy Beef",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "isHot": true,
+          "name": "Shrimp with Chili Sauce",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Shrimp with Mixed Vegetable",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Shrimp with Lobster Sauce",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Chicken with Cashew Nuts",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Shrimp with Broccoli",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Roast Pork or Chicken with Broccoli",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Roast Pork with Mixed Vegetable",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Mixed Vegetable",
+          "prices": [
+            {
+              "price": 9.25
+            }
+          ]
+        },
+        {
+          "name": "Beef with Broccoli",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        },
+        {
+          "name": "Beef with Mixed Vegetable",
+          "prices": [
+            {
+              "price": 9.75
+            }
+          ]
+        }
+      ],
+      "name": "Special Combination"
+    }
+  ]
+}

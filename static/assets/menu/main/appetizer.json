@@ -1,0 +1,123 @@
+{
+  "data": {
+    "items": [
+      {
+        "name": "Egg Roll",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 1.6
+          }
+        ]
+      },
+      {
+        "name": "Spring Roll",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 1.65
+          }
+        ]
+      },
+      {
+        "name": "Shrimp Roll",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 1.7
+          }
+        ]
+      },
+      {
+        "name": "Krab Rangoon (8)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 5.95
+          }
+        ]
+      },
+      {
+        "name": "Fried Wonton (12)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 5.25
+          }
+        ]
+      },
+      {
+        "name": "Fried Dumplings (6)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 6.35
+          }
+        ]
+      },
+      {
+        "name": "Steamed Dumplings (6)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 6.35
+          }
+        ]
+      },
+      {
+        "name": "Beef on a Stick (3)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 5.95
+          }
+        ]
+      },
+      {
+        "name": "Teriyaki Chicken (4)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 5.95
+          }
+        ]
+      },
+      {
+        "name": "Boneless Spare Ribs",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "name": "B-B-Q Spare Ribs",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "name": "Pu Pu Platter (For Two)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 12.9
+          }
+        ]
+      }
+    ],
+    "name": "Appetizers"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "data": {
+    "description": "with White Rice",
+    "items": [
+      {
+        "name": "Chicken with Broccoli",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "name": "Moo Goo Gai Pan",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Chicken with Garlic Sauce",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Curry Chicken",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "name": "Chicken with Cashew Nuts",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Kung Pao Chicken",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Szechuan Chicken",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "name": "Chicken with Mixed Vegetable",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "name": "Honey Chicken",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Hunan Chicken",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.65
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      }
+    ],
+    "name": "Chicken"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "data": {
+    "description": "with Crispy Noodles",
+    "items": [
+      {
+        "name": "Pork Chow Mein",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.55
+          },
+          {
+            "label": "Quart",
+            "price": 9.95
+          }
+        ]
+      },
+      {
+        "name": "Chicken Chow Mein",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.55
+          },
+          {
+            "label": "Quart",
+            "price": 9.95
+          }
+        ]
+      },
+      {
+        "name": "Shrimp Chow Mein",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 10.25
+          }
+        ]
+      }
+    ],
+    "name": "Chow Mein"
+  }
+}

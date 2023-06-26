@@ -1,0 +1,89 @@
+{
+  "data": {
+    "description": "with White Rice",
+    "items": [
+      {
+        "name": "Beef with Broccoli",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "name": "Pepper Steak with Onion",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "name": "Beef with Mixed Vegetable",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Hunan Beef",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Hot & Spicy Beef",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      },
+      {
+        "isHot": true,
+        "name": "Szechuan Beef",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 6.95
+          },
+          {
+            "label": "Quart",
+            "price": 11.5
+          }
+        ]
+      }
+    ],
+    "name": "Beef"
+  }
+}

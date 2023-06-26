@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "items": [
+        {
+          "name": "Fried Chicken Wings",
+          "prices": [
+            {
+              "label": "Plain",
+              "price": 5.95
+            },
+            {
+              "label": "with French Fries or Pork Fried Rice",
+              "price": 7.5
+            },
+            {
+              "label": "with Shrimp or Beef Fried Rice",
+              "price": 8.5
+            }
+          ]
+        },
+        {
+          "name": "Boneless Spare Ribs",
+          "prices": [
+            {
+              "label": "Plain",
+              "price": 6.95
+            },
+            {
+              "label": "with French Fries or Pork Fried Rice",
+              "price": 8.95
+            },
+            {
+              "label": "with Shrimp or Beef Fried Rice",
+              "price": 9.95
+            }
+          ]
+        }
+      ],
+      "name": "Specialties"
+    }
+  ]
+}
