@@ -1,19 +1,66 @@
 {
   "data": {
-    "IMG_1316": "Singapore Mai Fun",
-    "IMG_1317": "Sweet & Sour Chicken",
-    "IMG_1319": "Shrimp Lo Mein",
-    "IMG_1320": "Krab Rangoon",
-    "IMG_1321": "Shrimp Fried Rice",
-    "IMG_1322": "Chicken Broccoli Combo",
-    "IMG_1323": "General Tso's Chicken",
-    "IMG_1324": "Burbon Chicken",
-    "IMG_1343": "House Special Lo Mein",
-    "IMG_1344": "Sweet & Sour Chicken Combo",
-    "IMG_1345": "Orange Chicken Combo",
-    "IMG_1346": "Mixed Vegetable Tray",
-    "IMG_1347": "Orange Chicken",
-    "IMG_1348": "Steamed Dumplings",
-    "IMG_1349": "Fried Dumplings"
+    "items": [
+      {
+        "fileName": "IMG_1316.webp",
+        "dishName": "Singapore Mai Fun"
+      },
+      {
+        "fileName": "IMG_1317.webp",
+        "dishName": "Sweet & Sour Chicken"
+      },
+      {
+        "fileName": "IMG_1319.webp",
+        "dishName": "Shrimp Lo Mein"
+      },
+      {
+        "fileName": "IMG_1320.webp",
+        "dishName": "Krab Rangoon"
+      },
+      {
+        "fileName": "IMG_1321.webp",
+        "dishName": "Shrimp Fried Rice"
+      },
+      {
+        "fileName": "IMG_1322.webp",
+        "dishName": "Chicken Broccoli Combo"
+      },
+      {
+        "fileName": "IMG_1323.webp",
+        "dishName": "General Tso's Chicken"
+      },
+      {
+        "fileName": "IMG_1324.webp",
+        "dishName": "Burbon Chicken"
+      },
+      {
+        "fileName": "IMG_1343.webp",
+        "dishName": "House Special Lo Mein"
+      },
+      {
+        "fileName": "IMG_1344.webp",
+        "dishName": "Sweet & Sour Chicken Combo"
+      },
+      {
+        "fileName": "IMG_1345.webp",
+        "dishName": "Orange Chicken Combo"
+      },
+      {
+        "fileName": "IMG_1346.webp",
+        "dishName": "Mixed Vegetable Tray"
+      },
+      {
+        "fileName": "IMG_1347.webp",
+        "dishName": "Orange Chicken"
+      },
+      {
+        "fileName": "IMG_1348.webp",
+        "dishName": "Steamed Dumplings"
+      },
+      {
+        "fileName": "IMG_1349.webp",
+        "dishName": "Fried Dumplings"
+      }
+    ]
   }
 }
