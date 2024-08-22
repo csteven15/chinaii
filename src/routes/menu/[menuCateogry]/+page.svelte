@@ -6,7 +6,6 @@
   $: menu = data.menu.data;
   $: slug = data.slug;
 
-  console.log(data);
 </script>
 
 <Breadcrumb />

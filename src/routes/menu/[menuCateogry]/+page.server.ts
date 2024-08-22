@@ -9,8 +9,6 @@ export async function load({ params: { menuCateogry }, fetch }) {
       return json.data;
     }));
 
-    console.log("menu menu menu menu" , mainMenu);
-
     menu = {
       data: {
         mainMenu
