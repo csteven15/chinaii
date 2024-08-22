@@ -7,15 +7,15 @@
           "prices": [
             {
               "label": "Plain",
-              "price": 5.95
+              "price": 6.99
             },
             {
               "label": "with French Fries or Pork Fried Rice",
-              "price": 7.5
+              "price": 9.95
             },
             {
               "label": "with Shrimp or Beef Fried Rice",
-              "price": 8.5
+              "price": 10.25
             }
           ]
         },
@@ -24,15 +24,15 @@
           "prices": [
             {
               "label": "Plain",
-              "price": 6.95
+              "price": 8.50
             },
             {
               "label": "with French Fries or Pork Fried Rice",
-              "price": 8.95
+              "price": 9.95
             },
             {
               "label": "with Shrimp or Beef Fried Rice",
-              "price": 9.95
+              "price": 10.25
             }
           ]
         }

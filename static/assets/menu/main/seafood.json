@@ -7,11 +7,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -20,11 +20,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -33,11 +33,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -47,11 +47,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -61,11 +61,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -74,11 +74,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       },
@@ -88,11 +88,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 7.25
+            "price": 8.99
           },
           {
             "label": "Quart",
-            "price": 11.7
+            "price": 12.99
           }
         ]
       }

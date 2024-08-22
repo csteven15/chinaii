@@ -6,11 +6,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.75
+            "price": 3.2
           },
           {
             "label": "Quart",
-            "price": 4.25
+            "price": 5.5
           }
         ]
       },
@@ -19,11 +19,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.75
+            "price": 3.2
           },
           {
             "label": "Quart",
-            "price": 4.25
+            "price": 5.5
           }
         ]
       },
@@ -32,11 +32,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.75
+            "price": 3.2
           },
           {
             "label": "Quart",
-            "price": 4.25
+            "price": 5.5
           }
         ]
       },
@@ -45,11 +45,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.75
+            "price": 3.2
           },
           {
             "label": "Quart",
-            "price": 4.25
+            "price": 5.5
           }
         ]
       },
@@ -58,11 +58,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.95
+            "price": 3.45
           },
           {
             "label": "Quart",
-            "price": 4.95
+            "price": 5.95
           }
         ]
       },
@@ -72,11 +72,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 2.95
+            "price": 3.45
           },
           {
             "label": "Quart",
-            "price": 5.25
+            "price": 5.95
           }
         ]
       },
@@ -86,7 +86,7 @@
         "prices": [
           {
             "label": "Quart",
-            "price": 8.5
+            "price": 9.5
           }
         ]
       },
@@ -95,7 +95,7 @@
         "prices": [
           {
             "label": "Quart",
-            "price": 9.95
+            "price": 10.95
           }
         ]
       },
@@ -104,7 +104,7 @@
         "prices": [
           {
             "label": "Quart",
-            "price": 7.5
+            "price": 8.5
           }
         ]
       }

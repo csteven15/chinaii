@@ -1,8 +1,9 @@
 {
   "data": {
+    "description": "with White Rice",
     "items": [
       {
-        "name": "Pork Fried Rice",
+        "name": "Mixed Vegetable Tray",
         "prices": [
           {
             "label": "Pint",
@@ -10,12 +11,13 @@
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 9.90
           }
         ]
       },
       {
-        "name": "Chicken Fried Rice",
+        "isHot": true,
+        "name": "Broccoli in Garlic Sauce",
         "prices": [
           {
             "label": "Pint",
@@ -23,12 +25,12 @@
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 9.90
           }
         ]
       },
       {
-        "name": "Beef Fried Rice",
+        "name": "Sauteed Broccoli",
         "prices": [
           {
             "label": "Pint",
@@ -36,50 +38,31 @@
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 9.90
           }
         ]
       },
       {
-        "name": "Shrimp Fried Rice",
+        "isHot": true,
+        "name": "Ma Po Tofu",
         "prices": [
           {
-            "label": "Pint",
-            "price": 6.75
-          },
-          {
             "label": "Quart",
-            "price": 10.25
+            "price": 10.50
           }
         ]
       },
       {
-        "name": "Vegetable Fried Rice",
+        "isHot": true,
+        "name": "Szechuan Tofu with Vegetables",
         "prices": [
           {
-            "label": "Pint",
-            "price": 6.5
-          },
-          {
             "label": "Quart",
-            "price": 9.5
-          }
-        ]
-      },
-      {
-        "name": "House Fried Rice",
-        "prices": [
-          {
-            "label": "Pint",
-            "price": 7.25
-          },
-          {
-            "label": "Quart",
-            "price": 10.5
+            "price": 10.50
           }
         ]
       }
     ],
-    "name": "Fried Rice"
+    "name": "Vegetable"
   }
 }

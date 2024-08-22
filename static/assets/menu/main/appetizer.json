@@ -2,29 +2,29 @@
   "data": {
     "items": [
       {
-        "name": "Egg Roll",
+        "name": "Egg Roll (1)",
         "prices": [
           {
             "label": "Per Order",
-            "price": 1.6
+            "price": 2.2
           }
         ]
       },
       {
-        "name": "Spring Roll",
+        "name": "Spring Roll (1)",
         "prices": [
           {
             "label": "Per Order",
-            "price": 1.65
+            "price": 2.2
           }
         ]
       },
       {
-        "name": "Shrimp Roll",
+        "name": "Shrimp Roll (1)",
         "prices": [
           {
             "label": "Per Order",
-            "price": 1.7
+            "price": 2.3
           }
         ]
       },
@@ -33,7 +33,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 5.95
+            "price": 7.25
           }
         ]
       },
@@ -42,7 +42,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 5.25
+            "price": 7.25
           }
         ]
       },
@@ -51,7 +51,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 6.35
+            "price": 6.95
           }
         ]
       },
@@ -60,7 +60,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 6.35
+            "price": 6.95
           }
         ]
       },
@@ -69,7 +69,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 5.95
+            "price": 6.95
           }
         ]
       },
@@ -78,7 +78,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 5.95
+            "price": 6.95
           }
         ]
       },
@@ -87,11 +87,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.95
+            "price": 8.5
           },
           {
             "label": "Quart",
-            "price": 11.5
+            "price": 12.99
           }
         ]
       },
@@ -100,11 +100,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.95
+            "price": 8.5
           },
           {
             "label": "Quart",
-            "price": 11.5
+            "price": 12.99
           }
         ]
       },
@@ -113,7 +113,7 @@
         "prices": [
           {
             "label": "Per Order",
-            "price": 12.9
+            "price": 13.99
           }
         ]
       }

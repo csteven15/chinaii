@@ -7,7 +7,7 @@
           "name": "Chicken or Shrimp Chow Mein",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -15,7 +15,7 @@
           "name": "Roast Pork or Chicken Egg Foo Young",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -23,7 +23,7 @@
           "name": "Roast Pork or Chicken Lo Mein",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -31,7 +31,7 @@
           "name": "Shrimp or Beef Lo Mein",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -39,7 +39,7 @@
           "name": "Boneless Spare Ribs",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -47,7 +47,7 @@
           "name": "B-B-Q Spare Ribs",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -55,7 +55,7 @@
           "name": "Sweet & Sour Chicken or Pork",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -63,7 +63,7 @@
           "name": "Honey Chicken",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -71,7 +71,7 @@
           "name": "Sesame Chicken",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -80,7 +80,7 @@
           "name": "General Tso's Chicken",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -89,7 +89,7 @@
           "name": "Szechuan Chicken",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -97,7 +97,7 @@
           "name": "Bourbon Chicken",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -106,7 +106,7 @@
           "name": "Curry Chicken",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -114,7 +114,7 @@
           "name": "Chicken with Mixed Vegetable",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -123,7 +123,7 @@
           "name": "Chicken with Garlic Sauce",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -131,7 +131,7 @@
           "name": "Moo Goo Gai Pan",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -139,7 +139,7 @@
           "name": "Pepper Steak with Onion",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -148,7 +148,7 @@
           "name": "Hunan Beef",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -157,7 +157,7 @@
           "name": "Hot & Spicy Beef",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -166,7 +166,7 @@
           "name": "Shrimp with Chili Sauce",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -174,7 +174,7 @@
           "name": "Shrimp with Mixed Vegetable",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -182,7 +182,7 @@
           "name": "Shrimp with Lobster Sauce",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -190,7 +190,7 @@
           "name": "Chicken with Cashew Nuts",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -198,7 +198,7 @@
           "name": "Shrimp with Broccoli",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -206,7 +206,7 @@
           "name": "Roast Pork or Chicken with Broccoli",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -214,7 +214,7 @@
           "name": "Roast Pork with Mixed Vegetable",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -222,7 +222,7 @@
           "name": "Mixed Vegetable",
           "prices": [
             {
-              "price": 9.25
+              "price": 11.5
             }
           ]
         },
@@ -230,7 +230,7 @@
           "name": "Beef with Broccoli",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         },
@@ -238,7 +238,7 @@
           "name": "Beef with Mixed Vegetable",
           "prices": [
             {
-              "price": 9.75
+              "price": 11.5
             }
           ]
         }

@@ -5,7 +5,6 @@
   // @ts-ignore
   $: menu = data.menu.data;
   $: slug = data.slug;
-
 </script>
 
 <Breadcrumb />
@@ -60,7 +59,7 @@
     </div>
   {/each}
 {:else}
-  {#each menu.mainMenu as { name, description, items }}
+  {#each menu.mainMenu as { name, description, items }, index}
     <div class="py-2">
       <p class="font-bold font-extrabold">{name}</p>
       {#if description}
@@ -107,5 +106,9 @@
         </div>
       {/each}
     </div>
+    <br />
+    {#if index !== 14}
+      <hr />
+    {/if}
   {/each}
 {/if}

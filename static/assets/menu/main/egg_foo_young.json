@@ -1,36 +1,27 @@
 {
   "data": {
-    "description": "Rice Noodles",
+    "description": "with White Rice",
     "items": [
       {
-        "name": "Pork Chow Mai Fun",
+        "name": "Roast Pork Egg Foo Young",
         "prices": [
           {
             "label": "Per Order",
-            "price": 10.25
+            "price": 10.50
           }
         ]
       },
       {
-        "name": "Chicken Chow Mai Fun",
+        "name": "Chicken Egg Foo Young",
         "prices": [
           {
             "label": "Per Order",
-            "price": 10.25
+            "price": 10.50
           }
         ]
       },
       {
-        "name": "Shrimp Chow Mai Fun",
-        "prices": [
-          {
-            "label": "Per Order",
-            "price": 10.95
-          }
-        ]
-      },
-      {
-        "name": "House Special Chow Mai Fun",
+        "name": "Shrimp Egg Foo Young",
         "prices": [
           {
             "label": "Per Order",
@@ -39,16 +30,24 @@
         ]
       },
       {
-        "isHot": true,
-        "name": "Singapore Mai Fun",
+        "name": "House Special Egg Foo Young",
         "prices": [
           {
             "label": "Per Order",
             "price": 11.95
+          }
+        ]
+      },
+      {
+        "name": "Vegetable Egg Foo Young",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 10
           }
         ]
       }
     ],
-    "name": "Chow Mai Fun"
+    "name": "Egg Foo Young"
   }
 }

@@ -8,7 +8,7 @@
           "name": "Seafood Delight",
           "prices": [
             {
-              "price": 14.95
+              "price": 15.95
             }
           ]
         },
@@ -17,7 +17,7 @@
           "name": "Happy Family",
           "prices": [
             {
-              "price": 14.25
+              "price": 15.25
             }
           ]
         },
@@ -26,7 +26,7 @@
           "name": "Four Seasons",
           "prices": [
             {
-              "price": 13.1
+              "price": 14.1
             }
           ]
         },
@@ -36,7 +36,7 @@
           "name": "Orange Beef",
           "prices": [
             {
-              "price": 12.95
+              "price": 13.95
             }
           ]
         },
@@ -46,11 +46,11 @@
           "prices": [
             {
               "label": "Small",
-              "price": 7.5
+              "price": 8.5
             },
             {
               "label": "Large",
-              "price": 11.95
+              "price": 13
             }
           ]
         },
@@ -60,7 +60,7 @@
           "name": "Mongolian Beef",
           "prices": [
             {
-              "price": 12.25
+              "price": 13.95
             }
           ]
         },
@@ -69,11 +69,11 @@
           "prices": [
             {
               "label": "Small",
-              "price": 7.5
+              "price": 8.5
             },
             {
               "label": "Large",
-              "price": 11.95
+              "price": 13
             }
           ]
         },
@@ -83,7 +83,7 @@
           "name": "Szechuan Shrimp and Chicken",
           "prices": [
             {
-              "price": 11.95
+              "price": 13
             }
           ]
         },
@@ -94,11 +94,11 @@
           "prices": [
             {
               "label": "Small",
-              "price": 7.5
+              "price": 8.5
             },
             {
               "label": "Large",
-              "price": 11.95
+              "price": 13
             }
           ]
         },
@@ -109,11 +109,11 @@
           "prices": [
             {
               "label": "Small",
-              "price": 7.5
+              "price": 8.5
             },
             {
               "label": "Large",
-              "price": 11.95
+              "price": 13
             }
           ]
         },
@@ -123,7 +123,7 @@
           "name": "Hunan Delicacy",
           "prices": [
             {
-              "price": 12.95
+              "price": 13.95
             }
           ]
         },
@@ -132,7 +132,7 @@
           "name": "Subgum Noodle",
           "prices": [
             {
-              "price": 12.95
+              "price": 13.95
             }
           ]
         },
@@ -142,7 +142,7 @@
           "name": "Hunan Tripple Delight",
           "prices": [
             {
-              "price": 12.95
+              "price": 13.95
             }
           ]
         }

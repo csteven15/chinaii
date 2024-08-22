@@ -7,11 +7,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -20,11 +20,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -34,11 +34,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -48,11 +48,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -61,11 +61,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -75,11 +75,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -89,11 +89,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -102,11 +102,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -115,11 +115,11 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       },
@@ -129,15 +129,15 @@
         "prices": [
           {
             "label": "Pint",
-            "price": 6.65
+            "price": 8.85
           },
           {
             "label": "Quart",
-            "price": 10.25
+            "price": 11.99
           }
         ]
       }
     ],
-    "name": "Chicken"
+    "name": "Poultry"
   }
 }

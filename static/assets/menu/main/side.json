@@ -1,0 +1,47 @@
+{
+  "data": {
+    "items": [
+      {
+        "name": "Steamed White Rice",
+        "prices": [
+          {
+            "label": "Pint",
+            "price": 3
+          },
+          {
+            "label": "Quart",
+            "price": 5.5
+          }
+        ]
+      },
+      {
+        "name": "Fried Noodles (Bag)",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 0.5
+          }
+        ]
+      },
+      {
+        "name": "French Fries",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 4
+          }
+        ]
+      },
+      {
+        "name": "Sauce",
+        "prices": [
+          {
+            "label": "Per Order",
+            "price": 1.5
+          }
+        ]
+      }
+    ],
+    "name": "Side Orders"
+  }
+}

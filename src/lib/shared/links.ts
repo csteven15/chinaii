@@ -60,6 +60,10 @@ export const mainMenuCategories = [
     name: "Chow Mein",
   },
   {
+    href: "menu/main/egg_foo_young",
+    name: "Egg Foo Young",
+  },
+  {
     href: "menu/main/fried_rice",
     name: "Fried Rice",
   },
@@ -68,11 +72,31 @@ export const mainMenuCategories = [
     name: "Lo Mein",
   },
   {
+    href: "menu/main/moo_shu",
+    name: "Moo Shu",
+  },
+  {
+    href: "menu/main/pork",
+    name: "Pork",
+  },
+  {
     href: "menu/main/seafood",
     name: "Seafood",
+  },
+  {
+    href: "menu/main/side",
+    name: "Side",
   },
   {
     href: "menu/main/soup",
     name: "Soup",
   },
+  {
+    href: "menu/main/sweet_and_sour",
+    name: "Sweet and Sour",
+  },
+  {
+    href: "menu/main/vegetable",
+    name: "Vegetable",
+  }
 ];
