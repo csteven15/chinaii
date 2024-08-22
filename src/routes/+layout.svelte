@@ -3,7 +3,6 @@
   import { footerDays, mainNavigationPages } from "$lib/shared/links";
   import "../app.css";
 
-  export const ssr = false;
   let mobileMenuOpen = false;
 </script>
 
