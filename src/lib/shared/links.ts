@@ -40,39 +40,39 @@ export const menuCategories = [
 
 export const mainMenuCategories = [
   {
-    href: "/menu/main/appetizer",
+    href: "menu/main/appetizer",
     name: "Appetizer",
   },
   {
-    href: "/menu/main/beef",
+    href: "menu/main/beef",
     name: "Beef",
   },
   {
-    href: "/menu/main/chicken",
+    href: "menu/main/chicken",
     name: "Chicken",
   },
   {
-    href: "/menu/main/chow_mai_fun",
+    href: "menu/main/chow_mai_fun",
     name: "Chow Mai Fun",
   },
   {
-    href: "/menu/main/chow_mein",
+    href: "menu/main/chow_mein",
     name: "Chow Mein",
   },
   {
-    href: "/menu/main/fried_rice",
+    href: "menu/main/fried_rice",
     name: "Fried Rice",
   },
   {
-    href: "/menu/main/lo_mein",
+    href: "menu/main/lo_mein",
     name: "Lo Mein",
   },
   {
-    href: "/menu/main/seafood",
+    href: "menu/main/seafood",
     name: "Seafood",
   },
   {
-    href: "/menu/main/soup",
+    href: "menu/main/soup",
     name: "Soup",
   },
 ];
