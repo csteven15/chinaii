@@ -1,6 +1,10 @@
 
 export const mainNavigationPages = [
   {
+    href: "/",
+    name: "Home",
+  },
+  {
     href: "/menu/main",
     name: "Menu",
   },
